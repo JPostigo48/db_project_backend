@@ -20,7 +20,5 @@ app.use(usuariosRoutes)
 app.use(productosRoutes)
 app.use(empleadosRoutes)
 
-// app.get('/inicio', (req, res) => res.send("Hola Mundo"))
-
 app.listen(5000)
 console.log("Server running in port 5000")

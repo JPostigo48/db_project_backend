@@ -10,7 +10,7 @@ export const validateEmpleados = async (req, res) => {
   res.cookie("t", token, { expire: new Date() + 9999 });
   return res.json({
     token,
-    user: result[0],
+    user: result[0][0],
     domain: "EPCC",
   });
 };
